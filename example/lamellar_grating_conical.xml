@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<Grating>
+	<Accuracy_optimization Is_Normal_mode="true" Is_Perfect_conductivity="true" Is_Phase_jump="true" Is_Reminder_term="true" Is_Logarithmic="true" Is_Profile_curve="true" Number_of_terms="50">
+	</Accuracy_optimization>
+	<Grating_shape Number_of_plane_sections_meridional="1" Number_of_plane_sections_saggital="1" Type_of_grating_shape="plane" Profile_changing="Holo_ideal">
+		<Period unit="nm">400.00000000000000000000</Period>
+		<Grooved_width unit="mm">100.00000000000000000000</Grooved_width>
+		<Groove_height unit="mm">50.00000000000000000000</Groove_height>
+	</Grating_shape>
+	<Beam_and_mounting_geometry Wave_front_type="plane" Type_of_diffraction="conical" Type_of_polarization="NP" Optical_mounting="general">
+		<Wavelength unit="nm">1.20000000000000000000</Wavelength>
+		<Azimuth_angle unit="deg">88.50000000000000000000</Azimuth_angle>
+		<Polar_angle unit="deg">0.00000000000000000000</Polar_angle>
+	</Beam_and_mounting_geometry>
+	<Layers>
+		<Top_layer Upper_profile_hor_offset="0.00000000000000000000" IsRI="true" IsCustom="true">
+			<Real_part>1.00000000000000000000</Real_part>
+			<Imaginary_part>0.00000000000000000000</Imaginary_part>
+		</Top_layer>
+		<Border>
+			<Border_properties Border_type="trapezoidal" Type_of_integration_step="s_interval" Amount_of_collocation_points="100" Using_shift="false">
+				<Trapezoidal type="lamellar" dependent_parameter="ridge" isResizeWholeProfile="true">
+					<Depth unit="nm">60.00000000000000000000</Depth>
+					<Land unit="nm">200.00000000000000000000</Land>
+				</Trapezoidal>
+			</Border_properties>
+		</Border>
+		<Bottom_layer Upper_profile_hor_offset="0.00000000000000000000" IsRI="true" IsCustom="false">
+			<Library_name>Au_CXRO_May_2006.ari</Library_name>
+			<Type_of_interpolation>linear</Type_of_interpolation>
+			<Rms_roughness unit="nm">0.00000000000000000000</Rms_roughness>
+		</Bottom_layer>
+	</Layers>
+	<Scanning_options>
+		<Scanning_parameter Parameter_name="Wavelength" unit="nm">
+			<Range Start_value="0.62000000000000000000" End_value="4.20000000000000020000" Step_value="0.01000000000000000000">
+			</Range>
+		</Scanning_parameter>
+	</Scanning_options>
+</Grating>
